@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Pokemon</title>
+</head>
+<body>
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">Pokemon 🌱🔥💧 </h1>
+      
+        <h2 class="subtitulo">Elige Tu Mascota:</h2>
+        
+        <div id="contenedorTarjetas" class="tarjetas">
+
+        </div>
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+    <section id="ver-mapa"> 
+        <h2 class="subtitulo">Batalla Pokemon</h2>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba </button>
+        <div>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha </button>
+        </div>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">Pokemon 🌱🔥💧 </h1>
+      
+        <h2 class="contenedorAtaques">Elige Tu Ataque:</h2>
+        
+        <div id="contenedorAtaques" class="tarjetas-ataques">
+        </div>
+    
+        <div id="Mensajes">
+            <p id="resultado">Mucha suerte!</p>
+            
+            <section id="Reiniciar">
+        <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">0</p> 
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                    
+                </div>
+                    <div class="ataques-enemigo">
+                        <p id="vidas-enemigo">0</p>
+                        <p id="mascota-enemigo"></p>
+                        <div id="ataques-del-enemigo"></div>
+                       
+                    </div>
+                </div>
+    </section> 
+    <script src="./js/pokemons js.js"></script> 
+</body>
+</html>
